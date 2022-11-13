@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.banner-card{
+  width: 86vw;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  position: relative;
+  height : 65vh ;
+  margin-left: 6.5vw;
+  border-radius: 0.4rem;
+}
+
+.banner-img{
+  border-radius: 0.4rem;
+ height: 65vh;
+ width: 100%;
+}
+
+.banner-title{
+ position: absolute;
+ color : white ;
+ top : 43vh;
+ left : 4vw ;
+ font-size: 2.5rem;
+
+}
+
+.banner-text{
+ position: absolute;
+ color : white ;
+ top : 52vh;
+ /* height: 4.5rem; */
+ margin-left: 4vw;
+ /* font-size: 1.15rem; */
+}
+
+.movie-list{
+ display: flex;
+ padding : 1rem ;
+ justify-content: center;
+ flex-wrap: wrap ;
+
+}
+
+.movie-card{
+ position: relative;
+ margin : 1rem ;
+ width : 20vw ;
+}
+
+.movie-title{
+ position: absolute;
+ color: white;
+ top : 0.75rem ;
+ left : 1rem ;
+}
+
+.movie-button{
+ position: absolute;
+ bottom: 2rem;
+ width: 80%;
+ /* left : 6rem; */
+}
+
+.movie-img{
+  height: 40vh;
+  width: 20vw;
+}
+
+.genre-selector{
+ padding : 3rem ;
+}
+
+.favourites-table{
+ padding : 3rem ;
+ overflow:auto ;
+}
+
+@media screen and (min-width: 425px) and (max-width: 769px){
+  .banner-card{
+    height:45vh;
+  }
+  .banner-img{
+    height: 45vh;
+  }
+  .banner-title{
+    top: 30vh;
+    left: 4vw ;
+    font-size : 1rem ;
+  }
+  .banner-text{
+    top: 34vh;
+    left: 0vw;
+    font-size: 0.6rem ;
+  }
+
+   .movie-card{
+    position: relative;
+    margin : 0.1rem ;
+    width : 40vw ;
+   }
+   
+  .movie-button{
+    width: 80%;
+  }
+  .movie-img{
+    width: 40vw;
+    /* height : 60vh; */
+  }
+}
